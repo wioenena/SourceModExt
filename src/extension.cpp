@@ -5,12 +5,10 @@ SMEXT_LINK(&g_L4D2Extension);
 
 IPlayerManager *g_pPlayerManager = nullptr;
 IGameHelpers *g_pGameHelpers = nullptr;
-IGamePlayer *g_pGamePlayer = nullptr;
 
 bool L4D2Extension::SDK_OnLoad(char *error, size_t maxlength, bool late) {
   SM_GET_IFACE(PLAYERMANAGER, g_pPlayerManager);
   SM_GET_IFACE(GAMEHELPERS, g_pGameHelpers);
-  SM_GET_IFACE(PLAYERMANAGER, g_pGamePlayer);
   if (!g_pPlayerManager) {
     snprintf(error, maxlength, "Failed to get player manager");
     return false;
@@ -18,11 +16,6 @@ bool L4D2Extension::SDK_OnLoad(char *error, size_t maxlength, bool late) {
 
   if (!g_pGameHelpers) {
     snprintf(error, maxlength, "Failed to get game helpers");
-    return false;
-  }
-
-  if (!g_pGamePlayer) {
-    snprintf(error, maxlength, "Failed to get game player");
     return false;
   }
 

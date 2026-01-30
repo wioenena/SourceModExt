@@ -17,7 +17,6 @@ public:
 
 extern L4D2Extension g_L4D2Extension;
 extern IPlayerManager *g_pPlayerManager;
-extern IGamePlayer *g_pGamePlayer;
 extern IGameHelpers *g_pGameHelpers;
 
 #endif // _INCLUDE_L4D2_PLUGIN_HPP_

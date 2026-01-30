@@ -26,7 +26,9 @@
               pkg-config
             ];
 
-            buildInputs = with pkgs32; [ ];
+            buildInputs = with pkgs32; [
+              pkgs.git
+            ];
 
             shellHook = ''
               echo "------------------------------------------------"
@@ -39,6 +41,8 @@
               fi
 
               ln -sf build/compile_commands.json compile_commands.json
+
+              git submodule update --init --recursive
             '';
           };
         }
