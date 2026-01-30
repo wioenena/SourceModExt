@@ -3,7 +3,6 @@
 L4D2Extension g_L4D2Extension;
 SMEXT_LINK(&g_L4D2Extension);
 
-// IVEngineServer *g_pEngineServer = nullptr;
 IPlayerManager *g_pPlayerManager = nullptr;
 IGameHelpers *g_pGameHelpers = nullptr;
 IGamePlayer *g_pGamePlayer = nullptr;

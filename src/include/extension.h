@@ -16,7 +16,6 @@ public:
 };
 
 extern L4D2Extension g_L4D2Extension;
-// extern IVEngineServer *g_pEngineServer;
 extern IPlayerManager *g_pPlayerManager;
 extern IGamePlayer *g_pGamePlayer;
 extern IGameHelpers *g_pGameHelpers;

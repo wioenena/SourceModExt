@@ -10,7 +10,6 @@
 #define SMEXT_CONF_LICENSE ""
 #define SMEXT_CONF_DATESTRING __DATE__
 
-// #define SMEXT_LINK_METAMOD
 #define SMEXT_LINK(name) SDKExtension *g_pExtensionIface = name;
 #define SMEXT_CONF_METAMOD
 #define SMEXT_ENABLE_PLAYERHELPERS
