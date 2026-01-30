@@ -36,13 +36,13 @@
               echo "------------------------------------------------"
               echo "Compilers: GCC $(gcc --version | head -n1 | awk '{print $3}')"
 
+              git submodule update --init --recursive
+
               if [ ! -d "build" ]; then
-                cmake -B build
+              cmake -B build
               fi
 
               ln -sf build/compile_commands.json compile_commands.json
-
-              git submodule update --init --recursive
             '';
           };
         }
