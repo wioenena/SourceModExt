@@ -1,0 +1,9 @@
+[submodule "sdks/sourcemod"]
+	path = sdks/sourcemod
+	url = https://github.com/alliedmodders/sourcemod
+[submodule "sdks/metamod-source"]
+	path = sdks/metamod-source
+	url = https://github.com/alliedmodders/metamod-source
+[submodule "sdks/hl2-l4d2"]
+	path = sdks/hl2-l4d2
+	url = https://github.com/alliedmodders/hl2sdk
